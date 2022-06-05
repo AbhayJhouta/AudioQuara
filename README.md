@@ -1,6 +1,6 @@
 Audio Quora App
 
--Social meadia (Question -Answer) Platform
+-Social media (Question -Answer) Platform
 
 • Focuses on Audio form of Answer to Questions asked by People.
 
