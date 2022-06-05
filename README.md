@@ -1,5 +1,7 @@
 Audio Quora App
 
+-Social meadia (Question -Answer) Platform
+
 • Focuses on Audio form of Answer to Questions asked by People.
 
 • Firebase Firestore and Storage used to store text and audio form of
