@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".giveans">
+
+    <TextView
+        android:id="@+id/ga_question"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="loading"
+        android:textColor="#101010"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/ga_scroll"
+        android:layout_width="360dp"
+        android:layout_height="450dp"
+        app:layout_constraintStart_toStartOf="@+id/ga_question"
+        app:layout_constraintTop_toBottomOf="@+id/ga_speak">
+
+        <LinearLayout
+            android:id="@+id/llay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ga_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Describe your audio"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ga_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:background="#0694A3"
+        android:text="Upload"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/ga_scroll"
+        app:layout_constraintTop_toBottomOf="@+id/ga_scroll" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ga_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:backgroundTint="#03B9CC"
+        app:layout_constraintStart_toStartOf="@+id/ga_question"
+        app:layout_constraintTop_toBottomOf="@+id/ga_question"
+        app:rippleColor="#0694A3"
+        app:srcCompat="@android:drawable/ic_btn_speak_now" />
+</androidx.constraintlayout.widget.ConstraintLayout>
