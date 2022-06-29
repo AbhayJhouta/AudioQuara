@@ -1,6 +1,6 @@
 Audio Quora App
 
-Demo - (audio scattered due to recoeding)
+Demo - (audio scattered due to recording)
 
 https://user-images.githubusercontent.com/80831615/176356472-9f83c964-e858-48bf-9e36-e1d68cd10498.mp4
 
